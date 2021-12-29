@@ -12,7 +12,7 @@ public class CadastroApplication {
 		
 		LeitorRemessa leitor = new LeitorRemessa();
 		
-		List<Cadastro> cadastros =	leitor.converter("C:\\Users\\edu\\Downloads\\Teste\\nomes.txt");	
+		List<Cadastro> cadastros =	leitor.converter("C:\\Dev\\ws\\PowerClassesProject\\dados-profissionais.txt");	
 		
 		for(Cadastro c: cadastros) {
 			

@@ -5,26 +5,25 @@ public class Cadastro {
 	
 	private String profissao;
 	private String nome;
-	private String sexo; //nao tem na ficha, porém no requisito 1; 
-	private Double salario; //max e minimo pretendido;
+	private String sexo;
+	private Double salarioMaximo;
+	private Double salarioMinimo;
 	private String dataNacimento;
 	private String cpf;
 	private String rg;
-	//endereço##########
-	private String endereço;
+	private String lugadouro;
 	private	String numeroResidencial;
 	private	String bairro;
 	private	String municipio;
-	private String uf; //enum pb estados
-	private String cep; //concat
+	private String uf; 
+	private String cep; 
 	private	String naturalidade;
 	private	String pais;
-	//endereço##########
-	private String telefone; //enum?  //se é numero estrangeiro e com ddd delimitado caso for estrageiro
-	private String email;	
-	//grau de instrução lista para escolha
+	private String telefone; 
+	private String email;
 	
 	
+
 	public String getProfissao() {
 		return profissao;
 	}
@@ -43,11 +42,17 @@ public class Cadastro {
 	public void setSexo(String sexo) {
 		this.sexo = sexo;
 	}
-	public Double getSalario() {
-		return salario;
+	public Double getSalarioMaximo() {
+		return salarioMaximo;
 	}
-	public void setSalario(Double salario) {
-		this.salario = salario;
+	public void setSalarioMaximo(Double salarioMaximo) {
+		this.salarioMaximo = salarioMaximo;
+	}
+	public Double getSalarioMinimo() {
+		return salarioMinimo;
+	}
+	public void setSalarioMinimo(Double salarioMinimo) {
+		this.salarioMinimo = salarioMinimo;
 	}
 	public String getDataNacimento() {
 		return dataNacimento;
@@ -67,11 +72,11 @@ public class Cadastro {
 	public void setRg(String rg) {
 		this.rg = rg;
 	}
-	public String getEndereço() {
-		return endereço;
+	public String getLugadouro() {
+		return lugadouro;
 	}
-	public void setEndereço(String endereço) {
-		this.endereço = endereço;
+	public void setLugadouro(String lugadouro) {
+		this.lugadouro = lugadouro;
 	}
 	public String getNumeroResidencial() {
 		return numeroResidencial;
@@ -126,22 +131,14 @@ public class Cadastro {
 	}
 	public void setEmail(String email) {
 		this.email = email;
-	}
-	@Override
-	public String toString() {
-		return "Cadastro [profissao=" + profissao + ", nome=" + nome + ", sexo=" + sexo + ", salario=" + salario
-				+ ", dataNacimento=" + dataNacimento + ", cpf=" + cpf + ", rg=" + rg + ", endereço=" + endereço
-				+ ", numeroResidencial=" + numeroResidencial + ", bairro=" + bairro + ", municipio=" + municipio
-				+ ", uf=" + uf + ", cep=" + cep + ", naturalidade=" + naturalidade + ", pais=" + pais + ", telefone="
-				+ telefone + ", email=" + email + "]";
-	}
+	}	
+
 	
 	
 	
 	
 	
-	
-	
+		
 
 
 }
