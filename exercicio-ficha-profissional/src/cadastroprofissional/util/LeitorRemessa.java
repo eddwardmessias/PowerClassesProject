@@ -3,6 +3,8 @@ package cadastroprofissional.util;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
@@ -11,12 +13,14 @@ import cadastroprofissional.model.Cadastro;
 
 
 public class LeitorRemessa {
-	
+	private DateTimeFormatter formatter = DateTimeFormatter.ofPattern("ddMMyyyy");	
 	public List<Cadastro> cadastros() throws FileNotFoundException{
 		
 		FileInputStream entradaArquivo = new FileInputStream(
 				new File("D:\\desafioEddward\\powerclassesproject\\dados-profissionais.txt"));
 		Scanner lerArquivo = new Scanner(entradaArquivo, "UTF-8");
+	
+
 		
 		List<Cadastro> cadastro  = new ArrayList<Cadastro>();
 
@@ -26,7 +30,7 @@ public class LeitorRemessa {
 
 			if (linha != null && !linha.isEmpty()) {
 				
-				String[] dados = linha.split("\\;");
+				String[] dados = linha.split(";");
 								
 				Cadastro cadastros = new Cadastro();
 				
@@ -35,8 +39,7 @@ public class LeitorRemessa {
 				cadastros.setSexo(dados[2]);
 				cadastros.setSalarioMinimo(Double.parseDouble(dados[3]));
 				cadastros.setSalarioMaximo(Double.parseDouble(dados[4]));
-				cadastros.setDataNacimento(dados[5]);
-				cadastros.setCpf(dados[6]);
+								cadastros.setCpf(dados[6]);
 				cadastros.setRg(dados[7]);
 				cadastros.setLogradouro(dados[8]);
 				cadastros.setNumeroResidencial(dados[9]);
@@ -49,7 +52,12 @@ public class LeitorRemessa {
 				cadastros.setTelefone(dados[16]);
 				cadastros.setCelular(dados[17]);
 				cadastros.setEmail(dados[18]);
-					
+
+				String DataNacimento = dados[5];
+				
+				LocalDate data = LocalDate.parse(DataNacimento,formatter);
+				cadastros.setDataNacimento(data);
+				
 				cadastro.add(cadastros);
 				
 					}	

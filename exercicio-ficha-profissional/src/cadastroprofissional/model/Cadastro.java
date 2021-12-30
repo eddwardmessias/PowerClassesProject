@@ -1,5 +1,10 @@
 package cadastroprofissional.model;
 
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -11,7 +16,7 @@ public class Cadastro {
 	private String sexo;
 	private Double salarioMaximo;
 	private Double salarioMinimo;
-	private String dataNacimento;
+	private LocalDate dataNacimento;
 	private String cpf;
 	private String rg;
 	private String logradouro;
@@ -26,7 +31,7 @@ public class Cadastro {
 	private String celular; //ficou faltando adicionei
 	private String email;
 	
-	
+
 	List<Cadastro> cadastro = new ArrayList<Cadastro>();
 	
 	public List<Cadastro> getCadastro() {
@@ -63,11 +68,11 @@ public class Cadastro {
 	public void setSalarioMinimo(Double salarioMinimo) {
 		this.salarioMinimo = salarioMinimo;
 	}
-	public String getDataNacimento() {
+	public LocalDate getDataNacimento() {
 		return dataNacimento;
 	}
-	public void setDataNacimento(String dataNacimento) {
-		this.dataNacimento = dataNacimento;
+	public void setDataNacimento(LocalDate data) {
+		this.dataNacimento = data;
 	}
 	public String getCpf() {
 		return cpf;
