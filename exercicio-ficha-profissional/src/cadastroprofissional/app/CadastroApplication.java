@@ -9,17 +9,13 @@ public class CadastroApplication {
 
 	public static void main(String[] args) {
 		
+	public static void main(String[] args) throws FileNotFoundException {
 		
-		LeitorRemessa leitor = new LeitorRemessa();
-		
-		List<Cadastro> cadastros =	leitor.converter("C:\\Dev\\ws\\PowerClassesProject\\dados-profissionais.txt");	
-		
-		for(Cadastro c: cadastros) {
-			
-			System.out.println(c);
-			
+		LeitorRemessa leitorRemessa = new LeitorRemessa();
+		List<Cadastro> registros = leitorRemessa.cadastros();
+		for (Cadastro registro : registros) {
+		System.out.println(registro);
 		}
-		
 	}
 
 }

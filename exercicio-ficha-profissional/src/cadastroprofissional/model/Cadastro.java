@@ -21,8 +21,11 @@ public class Cadastro {
 	private	String pais;
 	private String telefone; 
 	private String email;
+	List<Cadastro> cadastro = new ArrayList<Cadastro>();
 	
-	
+	public List<Cadastro> getCadastro() {
+		return cadastro;
+	}
 
 	public String getProfissao() {
 		return profissao;

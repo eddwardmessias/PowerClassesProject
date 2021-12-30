@@ -1,37 +1,63 @@
 package cadastroprofissional.util;
 
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Paths;
+import java.util.ArrayList;
 import java.util.List;
+import java.util.Scanner;
 
 import cadastroprofissional.model.Cadastro;
 
 
 public class LeitorRemessa {
 	
-	private List<String> ler(String diretorioArquivo) {
+	public List<Cadastro> cadastros() throws FileNotFoundException{
 		
-		try {
-            List<String> cadastros = Files.readAllLines(Paths.get(diretorioArquivo), StandardCharsets.UTF_8);
-            return cadastros;
-        } catch (IOException e) {
-            e.printStackTrace();
-            return null;
-        }
-	}
-	
-	public List<Cadastro> converter(String diretorioArquivo) {
+		FileInputStream entradaArquivo = new FileInputStream(
+				new File("D:\\powerclassedesafio\\powerclassesproject\\dados-profissionais.txt"));
+		Scanner lerArquivo = new Scanner(entradaArquivo, "UTF-8");
 		
-		List<String> informacoesPessoais = ler(diretorioArquivo);
-		
-		
-			
-				
-		return null;
-		
-		
-	}
+		List<Cadastro> cadastro  = new ArrayList<Cadastro>();
 
+		while (lerArquivo.hasNext()) {
+
+			String linha = lerArquivo.nextLine();
+
+			if (linha != null && !linha.isEmpty()) {
+				
+				String[] dados = linha.split("\\;");
+								
+				Cadastro cadastros = new Cadastro();
+				
+				cadastros.setProfissao(dados[0]);
+				cadastros.setNome(dados[1]);
+				cadastros.setSexo(dados[2]);
+				cadastros.setSalarioMinimo(Double.parseDouble(dados[3]));
+				cadastros.setSalarioMaximo(Double.parseDouble(dados[4]));
+				cadastros.setDataNacimento(dados[5]);
+				cadastros.setCpf(dados[6]);
+				cadastros.setRg(dados[7]);
+				cadastros.setLugadouro(dados[8]);
+				cadastros.setNumeroResidencial(dados[9]);
+				cadastros.setBairro(dados[10]);
+				cadastros.setMunicipio(dados[11]);
+				cadastros.setUf(dados[12]);
+				cadastros.setCep(dados[13]);
+				cadastros.setNaturalidade(dados[14]);
+				cadastros.setPais(dados[15]);
+				cadastros.setTelefone(dados[16]);
+				cadastros.setEmail(dados[17]);
+					
+				cadastro.add(cadastros);
+				
+					}	
+			}
+		return cadastro;
+				
+				}
 }
