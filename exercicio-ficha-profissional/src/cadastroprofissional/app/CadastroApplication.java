@@ -16,9 +16,9 @@ public class CadastroApplication {
 		
 		LeitorRemessa leitorRemessa = new LeitorRemessa();
 		List<Cadastro> registros = leitorRemessa.cadastros();
-		for (Cadastro registro : registros) {
+		/*for (Cadastro registro : registros) {
 		System.out.println(registro);
-		}
+		}*/
 		
 		for(Cadastro c: registros) {
 			imprimirDados.imprimirFichaProfissional(c);

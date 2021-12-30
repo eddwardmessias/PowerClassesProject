@@ -15,7 +15,7 @@ public class LeitorRemessa {
 	public List<Cadastro> cadastros() throws FileNotFoundException{
 		
 		FileInputStream entradaArquivo = new FileInputStream(
-				new File("C:\\Dev\\ws\\ProjetoPowerClasses\\powerclassesproject\\dados-profissionais.txt"));
+				new File("D:\\desafioEddward\\powerclassesproject\\dados-profissionais.txt"));
 		Scanner lerArquivo = new Scanner(entradaArquivo, "UTF-8");
 		
 		List<Cadastro> cadastro  = new ArrayList<Cadastro>();
