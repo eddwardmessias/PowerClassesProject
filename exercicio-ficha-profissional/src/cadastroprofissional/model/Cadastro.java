@@ -1,5 +1,8 @@
 package cadastroprofissional.model;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Cadastro {
 	
 	
@@ -11,7 +14,7 @@ public class Cadastro {
 	private String dataNacimento;
 	private String cpf;
 	private String rg;
-	private String lugadouro;
+	private String logradouro;
 	private	String numeroResidencial;
 	private	String bairro;
 	private	String municipio;
@@ -19,8 +22,11 @@ public class Cadastro {
 	private String cep; 
 	private	String naturalidade;
 	private	String pais;
-	private String telefone; 
+	private String telefone; //adicionar ddd + numero
+	private String celular; //ficou faltando adicionei
 	private String email;
+	
+	
 	List<Cadastro> cadastro = new ArrayList<Cadastro>();
 	
 	public List<Cadastro> getCadastro() {
@@ -75,11 +81,11 @@ public class Cadastro {
 	public void setRg(String rg) {
 		this.rg = rg;
 	}
-	public String getLugadouro() {
-		return lugadouro;
+	public String getLogradouro() {
+		return logradouro;
 	}
-	public void setLugadouro(String lugadouro) {
-		this.lugadouro = lugadouro;
+	public void setLogradouro(String logradouro) {
+		this.logradouro = logradouro;
 	}
 	public String getNumeroResidencial() {
 		return numeroResidencial;
@@ -128,6 +134,12 @@ public class Cadastro {
 	}
 	public void setTelefone(String telefone) {
 		this.telefone = telefone;
+	}	
+	public String getCelular() {
+		return celular;
+	}
+	public void setCelular(String celular) {
+		this.celular = celular;
 	}
 	public String getEmail() {
 		return email;
@@ -135,12 +147,6 @@ public class Cadastro {
 	public void setEmail(String email) {
 		this.email = email;
 	}	
-
-	
-	
-	
-	
-	
 		
 
 

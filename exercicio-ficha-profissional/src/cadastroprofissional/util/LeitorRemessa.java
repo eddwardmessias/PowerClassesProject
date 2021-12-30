@@ -3,10 +3,6 @@ package cadastroprofissional.util;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
-import java.io.IOException;
-import java.nio.charset.StandardCharsets;
-import java.nio.file.Files;
-import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
@@ -19,7 +15,7 @@ public class LeitorRemessa {
 	public List<Cadastro> cadastros() throws FileNotFoundException{
 		
 		FileInputStream entradaArquivo = new FileInputStream(
-				new File("D:\\powerclassedesafio\\powerclassesproject\\dados-profissionais.txt"));
+				new File("C:\\Dev\\ws\\ProjetoPowerClasses\\powerclassesproject\\dados-profissionais.txt"));
 		Scanner lerArquivo = new Scanner(entradaArquivo, "UTF-8");
 		
 		List<Cadastro> cadastro  = new ArrayList<Cadastro>();
@@ -42,7 +38,7 @@ public class LeitorRemessa {
 				cadastros.setDataNacimento(dados[5]);
 				cadastros.setCpf(dados[6]);
 				cadastros.setRg(dados[7]);
-				cadastros.setLugadouro(dados[8]);
+				cadastros.setLogradouro(dados[8]);
 				cadastros.setNumeroResidencial(dados[9]);
 				cadastros.setBairro(dados[10]);
 				cadastros.setMunicipio(dados[11]);
@@ -51,7 +47,8 @@ public class LeitorRemessa {
 				cadastros.setNaturalidade(dados[14]);
 				cadastros.setPais(dados[15]);
 				cadastros.setTelefone(dados[16]);
-				cadastros.setEmail(dados[17]);
+				cadastros.setCelular(dados[17]);
+				cadastros.setEmail(dados[18]);
 					
 				cadastro.add(cadastros);
 				
