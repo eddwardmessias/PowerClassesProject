@@ -11,7 +11,10 @@ public class RegistroApplication {
 
 		
 	public static void main(String[] args) throws FileNotFoundException {
-			
+		
+		// o objeto Leitor sera responsavel por abrir o arquivo, fazer uma copia de seus dados em String
+		// nessa string que e a representacao do arquivo, sera verificado se esta no modelo delimitado ou posicional
+		// e dependendo do caso (1 ou 2) vai ser chamado o respectivo metodo para conversao apropriada
 		LeitorRemessa leitor = new LeitorRemessa();
 
 		String arquivo = leitor.ler("caminho");
@@ -25,6 +28,8 @@ public class RegistroApplication {
 			List<RegistroProfissional> registros = leitor.converterDelimitado("arquivo");
 		}
 
+		// o objeto 'impressor' vai imprimir no console (opcao 1) ou num arquivo txt (opcao 2), nesse segundo
+		// caso ira verificar se ele ja nao existe antes
 		ImpressorRemessa impressor = new ImpressorRemessa();
 
 		int tipoImpressao = 1;
