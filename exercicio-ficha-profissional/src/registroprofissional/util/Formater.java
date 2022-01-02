@@ -1,4 +1,4 @@
-package cadastroprofissional.util;
+package registroprofissional.util;
 
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
@@ -20,3 +20,4 @@ public class Formater extends LeitorRemessa {
 
 }
 	
+//
