@@ -1,4 +1,4 @@
-package cadastroprofissional.model;
+package registroprofissional.model;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -8,7 +8,7 @@ import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Cadastro {
+public class RegistroProfissional {
 	
 	
 	private String profissao;
@@ -32,10 +32,10 @@ public class Cadastro {
 	private String email;
 	
 
-	List<Cadastro> cadastro = new ArrayList<Cadastro>();
+	List<RegistroProfissional> registro = new ArrayList<RegistroProfissional>();
 	
-	public List<Cadastro> getCadastro() {
-		return cadastro;
+	public List<RegistroProfissional> getCadastro() {
+		return registro;
 	}
 
 	public String getProfissao() {
