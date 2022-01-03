@@ -2,4 +2,4 @@ Desevolvedor Junior;Eddward Messias Rocha;Masculino;250000;1000000;03021997;0128
 Desenvolvedor Trainee;Daniel Bincoleto de Sousa Santos;Masculino;110000;300000;09112000;03598745652;2322913;Av. Estados Unidos;666; Parque das Nações; Santo André;SP;52315698;São Paulo;Brasil;40038923;022993687459;dnbincoleto@gmail.com;
 Cantor;Gustavo Lima Rocha de Sousa;Masculino;500000;10000000;08092000;05896427834;6874258;Setor Total Ville Quadra 201 ;301;Residencial Total Ville; Santa Maria;DF;72584300;Ceilandia;Brasil;40028922;025999105013;gustavolima@contato.com.br;
 Desenvolvedora FrontEnd Jr;Claudia Maia de Andrade de Almeida Gripp;Feminino;500000;10000000;10021987;05305351731;218262251;Rua Bel Vale;830;Mury;Nova Friburgo;RJ;28615310;Rio de Janeiro;Brasil;0000000000;022998360879;maiaandradec@gmail.com;
-
+Assistente Operacional Junior;Lais Costa Santos Teixeira;Feminino;250000;10000000;13111993;39871726811;23203776;Rua Primeiro Sgto Joao Leite de Godoy;277;Agua Vermelha;Poa;SP;08656320;São Paulo;Brasil;0000000000;11994853110;laiscostast@gmail.com;
