@@ -7,11 +7,8 @@ Bem-vindos ao terceiro exercício em grupo do <img  align="center" alt="html5" s
 
 #### Colaboradores
 * *Daniel* *Santos*
-* *Arthur* *Kayser*
 * *Lais* *Costa*
 * *Eddward* *Messias*
-* *Jonas* *Souza*
-* *Henrique* *Cordeiro*
 * *Claudia* *A*
 * *Gustavo* *Lima*
 
