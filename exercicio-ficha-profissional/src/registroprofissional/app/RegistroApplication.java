@@ -16,7 +16,7 @@ public class RegistroApplication {
 		// nessa string que e a representacao do arquivo, sera verificado se esta no modelo delimitado ou posicional
 		// e dependendo do caso (1 ou 2) vai ser chamado o respectivo metodo para conversao apropriada
 		LeitorRemessa leitor = new LeitorRemessa();
-
+		
 		String arquivo = leitor.ler("caminho");
 
 		int tipoArquivo = leitor.identificar(arquivo);

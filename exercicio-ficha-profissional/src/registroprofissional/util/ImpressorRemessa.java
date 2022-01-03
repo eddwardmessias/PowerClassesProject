@@ -11,15 +11,15 @@ public class ImpressorRemessa {
 	private DateTimeFormatter formatter = DateTimeFormatter.ofPattern("ddMMyyyy");
 
 	public void imprimirConsole(RegistroProfissional registro) {
-
+		// imprime no console um registro profissional
 	}
 
 	private void verificarArquivo(String cpf) {
-		
+		// verifica se ja tem no sistema um arquivo txt de um registro profissional/cpf
 	}
 
 	public void imprimirArquivoTxt(RegistroProfissional registro) {
-
+		// cria um arquivo txt e imprime nele o resgistro profissional
 	}
 	/*	
 	public void imprimirFichaProfissional(RegistroProfissional registro) {

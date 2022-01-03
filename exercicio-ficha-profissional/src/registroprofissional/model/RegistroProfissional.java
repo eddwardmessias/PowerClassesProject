@@ -71,7 +71,7 @@ public class RegistroProfissional {
 	public LocalDate getDataNacimento() {
 		return dataNacimento;
 	}
-	public void setDataNacimento(LocalDate data) {
+	public void setDataNascimento(LocalDate data) {
 		this.dataNacimento = data;
 	}
 	public String getCpf() {
