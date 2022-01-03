@@ -1,9 +1,38 @@
 # Power Classes Project - Grupo 01
 
-Requisitos
-Criar uma classe que represente um Registro Profissional no sistema contendo os campos: Cpf, Data Nascimento, Nome, Sexo, Escolaridade, Profissão, Salário (Mínimo/Máximo) Pretendido,Telefone para contato (DDD+numero) e Estrangeiro;
-Criar um layout (posicional/delimitado) que represente as informações do Registro Profissional;
-Ler o arquivo e converter em objeto Registro Profissional;
-Pegar o objeto Registro Profissional e imprimir no console ou escrever em arquivo de nome [CPF].txt;
-Revisar os campos faltantes confome layout
-Os registros representarão cada integrante do grupo
+# Exercício MJV
+<div style="display: inline_block">
+Bem-vindos ao terceiro exercício em grupo do <img  align="center" alt="html5" src="https://img.shields.io/static/v1?label=DevSchool&message=MJV&color=blueviolet"/>!
+</div> 
+
+#### Colaboradores
+* *Daniel* *Santos*
+* *Arthur* *Kayser*
+* *Lais* *Costa*
+* *Eddward* *Messias*
+* *Jonas* *Souza*
+* *Henrique* *Cordeiro*
+* *Claudia* *A*
+* *Gustavo* *Lima*
+
+## Fundamentos do Exercício:
+  
+  Nesse exercício foi proposto a criação de uma classe que representasse um Resgistro Profissional contendo: Nome, Cpf, Data de Nascimento, Sexo, Escolaridade, Profissão,  Salário(Max e Min) e Telefone (DDD+Número);
+  Criamos um layout represetando e contendo todas as informações necessárias solicitadas pelo nosso cliente;
+  Incluimos um leitor e conversor de objeto;
+  Pegamos o objeto Registro Profissional e imprimimos no console;
+  
+ ## Nesse exercício usamos as classes que aprendemos em aula sendo elas:
+  * **_Java.lang.String_**;
+  * **_Java.util.StringJoiner_**;
+  * **_Java.lang.StringBuilder_**;
+  
+ <br>.
+  
+ 
+**Exercício 3: grupo (1)**.
+<div style="display: inline_block"><br/>
+<img  align="center" alt="html5" src="https://user-images.githubusercontent.com/72114370/147952873-58c548ba-1a01-495e-af81-9e9bb4062140.png"/>
+</div><br/>  
+
+Data do exercício: 03/01/2022.
