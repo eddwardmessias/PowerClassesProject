@@ -37,7 +37,7 @@ public class RegistroApplication {
 		// o objeto 'impressor' vai imprimir no console (opcao 1) ou num arquivo txt (opcao 2), nesse segundo
 		// caso ira verificar se ele ja nao existe antes
 		ImpressorRemessa impressor = new ImpressorRemessa();
-
+		
 		List<StringBuilder> fichas = new ArrayList<StringBuilder>();
 		
 		for (RegistroProfissional registro: registros) {

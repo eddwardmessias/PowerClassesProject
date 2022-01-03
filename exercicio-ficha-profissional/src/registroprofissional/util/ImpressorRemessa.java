@@ -24,12 +24,13 @@ public class ImpressorRemessa {
 		int indexReferenciaCpf = fichaProfissional.toString().lastIndexOf("CPF: ");
 		int indexCpf = indexReferenciaCpf + 1;
 		String cpf = fichaProfissional.substring(indexCpf,indexCpf + 10);
-		File arquivoFicha = new File("D:\\desafioEddward\\powerclassesproject\\dados-profissionais-posicional.txt"+cpf+".txt");
+		File arquivoFicha = new File("D:\\desafioEddward\\powerclassesproject\\"+ cpf +".txt");
 	
 		if (arquivoFicha.createNewFile() == true) {
 			try {
-				FileWriter escritor = new FileWriter("D:\\desafioEddward\\powerclassesproject\\dados-profissionais-posicional.txt"+cpf+".txt");
+				FileWriter escritor = new FileWriter("D:\\desafioEddward\\powerclassesproject\\"+ cpf +".txt");
 				escritor.write(fichaProfissional.toString());
+				escritor.write("\n");
 				escritor.close();
 				System.out.println("Arquivo criado com sucesso");
 			  } catch (IOException e) {
@@ -38,7 +39,7 @@ public class ImpressorRemessa {
 			  }
 		}
 		else {
-			System.out.println("A ficha já existe em formato .txt");
+			System.out.println("A ficha ja! existe em formato .txt");
 		}
 	}
 	
