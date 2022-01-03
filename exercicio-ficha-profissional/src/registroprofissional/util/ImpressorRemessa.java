@@ -24,11 +24,11 @@ public class ImpressorRemessa {
 		int indexReferenciaCpf = fichaProfissional.toString().lastIndexOf("CPF: ");
 		int indexCpf = indexReferenciaCpf + 1;
 		String cpf = fichaProfissional.substring(indexCpf,indexCpf + 10);
-		File arquivoFicha = new File("/home/jonatas/Desktop/Java/powerclassesproject/fichasProfissionais/"+cpf+".txt");
+		File arquivoFicha = new File("D:\\desafioEddward\\powerclassesproject\\dados-profissionais-posicional.txt"+cpf+".txt");
 	
 		if (arquivoFicha.createNewFile() == true) {
 			try {
-				FileWriter escritor = new FileWriter("/home/jonatas/Desktop/Java/powerclassesproject/fichasProfissionais/"+cpf+".txt");
+				FileWriter escritor = new FileWriter("D:\\desafioEddward\\powerclassesproject\\dados-profissionais-posicional.txt"+cpf+".txt");
 				escritor.write(fichaProfissional.toString());
 				escritor.close();
 				System.out.println("Arquivo criado com sucesso");
