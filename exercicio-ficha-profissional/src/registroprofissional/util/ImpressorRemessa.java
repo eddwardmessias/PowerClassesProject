@@ -39,7 +39,11 @@ public class ImpressorRemessa {
 			  }
 		}
 		else {
+<<<<<<< HEAD
 			System.out.println("A ficha ja! existe em formato .txt");
+=======
+			System.out.println("A ficha ja existe em formato .txt");
+>>>>>>> 903e6d050972625a5b984a9f17c001cbeb2dfcac
 		}
 	}
 	
@@ -48,24 +52,20 @@ public class ImpressorRemessa {
 		StringBuilder dadosFichaProfissional = new StringBuilder();
 	
 		dadosFichaProfissional.append("===================== FICHA PROFISSIONAL =====================\n");
-		dadosFichaProfissional.append("\nProfissï¿½o: " + registro.getProfissao()); // Tï¿½ EM NEGRITO ASSIM COMO FICHA
+		dadosFichaProfissional.append("\nProfissão: " + registro.getProfissao());
 		dadosFichaProfissional.append("\nNome: " + registro.getNome());
-		dadosFichaProfissional.append("\nSalï¿½rio Requerido: Mï¿½nimo R$ " + registro.getSalarioMinimo() + " Mï¿½ximo R$ "
+		dadosFichaProfissional.append("\nSalário Requerido: Mínimo R$ " + registro.getSalarioMinimo() + " Máximo R$ "
 				+ registro.getSalarioMinimo());
-		dadosFichaProfissional.append("\nData de Nasc.: " + registro.getDataNacimento() + " CPF: " + registro.getCpf()
-				+ " RG: " + registro.getRg());
-		dadosFichaProfissional.append("\nEndereï¿½o: " + registro.getLogradouro());
-		dadosFichaProfissional.append("\nNï¿½: " + registro.getNumeroResidencial() + " Bairro: " + registro.getBairro()
-				+ " Municï¿½pio: " + registro.getMunicipio() + " UF: " + registro.getUf());
-		dadosFichaProfissional.append("\nCep: " + registro.getCep() + " Naturalidade: " + registro.getNaturalidade()
-				+ " Paï¿½s: " + registro.getPais());
-		dadosFichaProfissional.append("\nTelefone: " + registro.getTelefone() + " Celular: " + registro.getCelular()); // adicionar
-																														// ddd
-																														// +
-																													// numero
+		dadosFichaProfissional.append("\nData de Nasc.: " + Formater.data(registro.getDataNacimento()) + " CPF: " + Formater.cpf(registro.getCpf()) 
+				+ " RG: " + Formater.rg(registro.getRg()));
+		dadosFichaProfissional.append("\nEndereço: " + registro.getLogradouro());
+		dadosFichaProfissional.append("\nNº: " + registro.getNumeroResidencial() + " Bairro: " + registro.getBairro()
+				+ " Município: " + registro.getMunicipio() + " UF: " + registro.getUf());
+		dadosFichaProfissional.append("\nCep: " + Formater.cep(registro.getCep()) + " Naturalidade: " + registro.getNaturalidade()
+				+ " País: " + registro.getPais());
+		dadosFichaProfissional.append("\nTelefone: " + registro.getTelefone() + " Celular: " + registro.getCelular()); 
 		dadosFichaProfissional.append("\nE-Mail: " + registro.getEmail());
-		dadosFichaProfissional.append("\n");
-		
+		dadosFichaProfissional.append("\n");		
 		return dadosFichaProfissional;
 	}
 }
