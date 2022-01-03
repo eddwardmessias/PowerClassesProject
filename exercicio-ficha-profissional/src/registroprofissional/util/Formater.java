@@ -1,7 +1,10 @@
 package registroprofissional.util;
 
+import java.text.DecimalFormat;
+import java.text.DecimalFormatSymbols;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
+import java.util.Locale;
 
 public class Formater extends LeitorRemessa {
 
@@ -58,5 +61,21 @@ public class Formater extends LeitorRemessa {
 		DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy");
 		return data.format(formatter);
 	}
-
+	
+	
+//	public static String moeda(DecimalFormat df) {
+//		
+//		String padrao = "###,###.##";
+//			
+//		df = new DecimalFormat(padrao);
+//		
+//		DecimalFormatSymbols dfs = new DecimalFormatSymbols(new Locale("pt", "Brazil"));
+//		dfs.setDecimalSeparator(',');
+//		dfs.setGroupingSeparator('.');
+//		df = new DecimalFormat(padrao,dfs);
+//		
+//		return df.for;
+//		
+//	}
+//	
 }

@@ -19,7 +19,7 @@ public class LeitorRemessa {
 		// tem a função apenas de pegar um arquivo em txt e retornar seus dados em List<String>
 
 		List<String> arquivoString = Files.readAllLines(
-				Paths.get("D:\\desafioEddward\\powerclassesproject\\dados-profissionais.txt"), StandardCharsets.UTF_8);
+				Paths.get("C:\\Dev\\ws\\PowerClassesProject\\powerclassesproject\\dados-profissionais.txt"), StandardCharsets.UTF_8);
 
 		return arquivoString;
 	}

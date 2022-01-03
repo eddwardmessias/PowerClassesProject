@@ -30,6 +30,7 @@ public class RegistroProfissional {
 	private String telefone; //adicionar ddd + numero
 	private String celular; //ficou faltando adicionei
 	private String email;
+	private 
 	
 
 	List<RegistroProfissional> registro = new ArrayList<RegistroProfissional>();
