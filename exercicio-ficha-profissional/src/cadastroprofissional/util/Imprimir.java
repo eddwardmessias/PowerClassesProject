@@ -8,7 +8,7 @@ import java.time.format.DateTimeFormatter;
 import cadastroprofissional.model.Cadastro;
 
 public class Imprimir {
-	private DateTimeFormatter formatter = DateTimeFormatter.ofPattern("ddMMyyyy");	
+
 	public void imprimirFichaProfissional(Cadastro cadastro) {
 
 		StringBuilder dadosFichaProfissional = new StringBuilder();
