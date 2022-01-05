@@ -63,19 +63,18 @@ public class Formater extends LeitorRemessa {
 	}
 	
 	
-//	public static String moeda(DecimalFormat df) {
-//		
-//		String padrao = "###,###.##";
-//			
-//		df = new DecimalFormat(padrao);
-//		
-//		DecimalFormatSymbols dfs = new DecimalFormatSymbols(new Locale("pt", "Brazil"));
-//		dfs.setDecimalSeparator(',');
-//		dfs.setGroupingSeparator('.');
-//		df = new DecimalFormat(padrao,dfs);
-//		
-//		return df.for;
-//		
-//	}
-//	
+	public static String salario(double salario) {
+		
+		String padrao = "###,###.##";
+		DecimalFormat df = new DecimalFormat(padrao);
+		
+		DecimalFormatSymbols dfs = new DecimalFormatSymbols(new Locale("pt", "Brazil"));
+		dfs.setDecimalSeparator(',');
+		dfs.setGroupingSeparator('.');
+		df = new DecimalFormat(padrao,dfs);
+		
+		return df.format(salario);
+		
+	}
+
 }

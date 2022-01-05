@@ -1,10 +1,7 @@
 package registroprofissional.model;
 
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
+
 import java.time.LocalDate;
-import java.time.LocalDateTime;
-import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -27,10 +24,10 @@ public class RegistroProfissional {
 	private String cep; 
 	private	String naturalidade;
 	private	String pais;
-	private String telefone; //adicionar ddd + numero
-	private String celular; //ficou faltando adicionei
+	private String telefone; 
+	private String celular; 
 	private String email;
-	private 
+
 	
 
 	List<RegistroProfissional> registro = new ArrayList<RegistroProfissional>();

@@ -3,22 +3,12 @@ package registroprofissional.util;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.security.cert.TrustAnchor;
-import java.text.DecimalFormat;
-import java.text.DecimalFormatSymbols;
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
-import java.time.LocalDate;
-import java.time.format.DateTimeFormatter;
-import java.util.Locale;
+
 
 import registroprofissional.model.RegistroProfissional;
 
 public class ImpressorRemessa {
 	
-	
-	
-	private DateTimeFormatter formatter = DateTimeFormatter.ofPattern("ddMMyyyy");
 
 	public void imprimirFichaConsole(StringBuilder fichaProfissional) {
 		// imprime no console um registro profissional
@@ -51,22 +41,14 @@ public class ImpressorRemessa {
 
 	public StringBuilder criarFichaProfissional(RegistroProfissional registro) {
 
-		String padrao = "##,###.00";
-		
-		DecimalFormat df = new DecimalFormat(padrao);
-		
-		DecimalFormatSymbols dfs = new DecimalFormatSymbols(new Locale("pt", "Brazil"));
-		dfs.setDecimalSeparator(',');
-		dfs.setGroupingSeparator('.');
-		df = new DecimalFormat(padrao, dfs);
-		
+
 		StringBuilder dadosFichaProfissional = new StringBuilder();
 
 		dadosFichaProfissional.append("===================== FICHA PROFISSIONAL =====================\n");
 		dadosFichaProfissional.append("\nProfissão: " + registro.getProfissao());
 		dadosFichaProfissional.append("\nNome: " + registro.getNome());
-		dadosFichaProfissional.append("\nSalário Requerido: Mínimo R$ " + df.format(registro.getSalarioMinimo()) + " Máximo R$ "
-				+ df.format(registro.getSalarioMaximo()));
+		dadosFichaProfissional.append("\nSalário Requerido: Mínimo R$ " + Formater.salario(registro.getSalarioMinimo()) + " Máximo R$ "
+				+ Formater.salario(registro.getSalarioMaximo()));
 		dadosFichaProfissional.append("\nData de Nasc.: " + Formater.data(registro.getDataNacimento()) + " CPF: "
 				+ Formater.cpf(registro.getCpf()) + " RG: " + Formater.rg(registro.getRg()));
 		dadosFichaProfissional.append("\nEndereço: " + registro.getLogradouro());
